@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #efefef;
+}
+
+.Navbar {
+  background-color: royalblue;
+  color: antiquewhite;
+  padding: 1.5rem 2%;
+  overflow: auto;
+}
+
+.Navbar::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.Navbar__btn {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 1rem 1.5rem;
+  color: black;
+  border: 1px solid whitesmoke;
+  background-image: linear-gradient(to top right, green, #d8d82a);
+  box-shadow: 0 0 2rem #615f5f;
+  border-radius: 1000px;
+  float: right;
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Navbar__btn:hover {
+  color: whitesmoke;
+  border: 1px solid black;
+}
+
+.Navbar__header {
+  font-size: 2.6rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.card {
+  margin-bottom: 120px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 2rem 1.5rem;
+  padding-top: 1rem;
+  border-radius: 1rem;
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.card__details {
+  margin-top: 3px;
+  margin-bottom: 7px;
+  text-align: center;
+  font-size: 28px;
+  color: #656565;
+  padding: 1rem;
+}
+footer {
+  width: 100%;
+  height: 6vh;
+  background-color: black;
+}
+.tableau {
+  /* width: 98vh; */
+  height: 95vh;
+}
+
+.card--split {
+  display: inline-block;
+  width: 49%;
+}
+
+.card--split:not(:last-child) {
+  margin-right: 2%;
+}
+
+.card-m-t {
+  margin-top: 2rem;
+}
+
+.select-ward {
+  font-weight: bold;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.select-ward > div {
+  display: inline-block;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.select-ward__select-container {
+  vertical-align: text-top;
+}
+
+.select-ward__select-container select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 3.8rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid black;
+}
