@@ -16,7 +16,7 @@ const TableauContainer = ({ top, data }) => {
           'While on the map, hovering over any centre will also highlight the total doses distributed by that cente. It will also display the Ward of the centre. The map is interactive.'
         }
       >
-        <TableauChart uri={'Center_map/AllCentresMap'} />
+        <TableauChart uri={'map3_16304891688500/AllCentresMap'} />
       </Card>
       <Card
         cardClassname='card-m-t'
@@ -25,7 +25,7 @@ const TableauContainer = ({ top, data }) => {
           'The total number of centres in a ward is displayed thorugh Bar Graphs. Hoverig over any graph will highlight it. This is useful if we want to analyse which wards may be needing more centres for a better distribution of shots.'
         }
       >
-        <TableauChart uri={'Center_count/CentreCountofeachWard'} />
+        <TableauChart uri={'count3/CentreCountofeachWard'} />
       </Card>
     </div>
   );
@@ -40,7 +40,7 @@ const TableauContainer = ({ top, data }) => {
           'The pie chart shows the total number of doses given till date, divided by each ward. The chart is interactive'
         }
       >
-        <TableauChart uri={'All_Wards/Ward-WiseTotalDoses'} />
+        <TableauChart uri={'ward3/Ward-WiseTotalDoses'} />
       </Card>
     </div>
   );

@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const match = useRouteMatch({ path: '/', exact: true });
-  const btnText = !!match ? 'Get Ward Details' : 'Go To Main Dashboard';
+  const btnText = !!match ? 'Get Zone Details' : 'Go To Main Dashboard';
   const btnText2 = 'View Dataset';
+  // const btnText3 = 'View Analytics Report';
   const href = !!match ? '/ward-details' : '/';
   const handleClick = () => {
     window.open(
@@ -22,6 +23,7 @@ const Navbar = () => {
       <div className='Navbar__btn' onClick={handleClick}>
         {btnText2}
       </div>
+
       {/* <div className='Navbar__btn'>{btnText2}</div> */}
     </nav>
   );
